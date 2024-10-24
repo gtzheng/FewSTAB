@@ -15,6 +15,8 @@ python extract_attributes.py --dataset miniImagenet --model vit-gpt2
 ```
 Upon completion, you will get `test_vit-gpt2_captions.csv` and `test_vit-gpt2_attribute_embeds.pickle`.
 
+We have provided the generated results using vit-gpt2 and blip [here](https://drive.google.com/drive/folders/11p_PIhnGRBdPJqVvBpQD6rEwBybFVfZu?usp=sharing).
+
 ### Configure `spurious/config.py`
 Specify the data root path on line 3, paths to few-shot classifiers from line 34 to line 143, and extracted attributes from line 146 to line 209.
 
