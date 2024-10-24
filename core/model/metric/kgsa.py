@@ -59,7 +59,7 @@ class KGSA(nn.Module):
     def __init__(self, encoder, encoder_args={},n_vecs=5, n_hidden=20, n_layer=2,dropout=0.2,
                  temp=1., temp_learnable=False):
         super(KGSA, self).__init__()
-        self.encoder = 
+        self.encoder = models.make(encoder, **encoder_args)
         if type(self.encoder.out_dim) == tuple:
             self.fea_dim = self.encoder.out_dim[0]
         else:
